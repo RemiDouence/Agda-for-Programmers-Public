@@ -1,0 +1,63 @@
+
+./Converters/toLiterate     < Markdown/Lab1.agda > Literate/Lab1.lagda.md
+./Converters/toLiterateExo  < Markdown/Lab1.agda > LiterateExo/Lab1.lagda.md
+./Converters/toLiterateSol  < Markdown/Lab1.agda > LiterateSol/Lab1.lagda.md
+./Converters/toPlainAgda    < Markdown/Lab1.agda > Agda/Lab1.agda
+./Converters/toPlainAgdaExo < Markdown/Lab1.agda > AgdaExo/Lab1.agda
+./Converters/toPlainAgdaSol < Markdown/Lab1.agda > AgdaSol/Lab1.agda
+
+./Converters/toLiterate     < Markdown/Lab2.agda > Literate/Lab2.lagda.md
+./Converters/toLiterateExo  < Markdown/Lab2.agda > LiterateExo/Lab2.lagda.md
+./Converters/toLiterateSol  < Markdown/Lab2.agda > LiterateSol/Lab2.lagda.md
+./Converters/toPlainAgda    < Markdown/Lab2.agda > Agda/Lab2.agda
+./Converters/toPlainAgdaExo < Markdown/Lab2.agda > AgdaExo/Lab2.agda
+./Converters/toPlainAgdaSol < Markdown/Lab2.agda > AgdaSol/Lab2.agda
+
+./Converters/toLiterate     < Markdown/Lab3.agda > Literate/Lab3.lagda.md
+./Converters/toLiterateExo  < Markdown/Lab3.agda > LiterateExo/Lab3.lagda.md
+./Converters/toLiterateSol  < Markdown/Lab3.agda > LiterateSol/Lab3.lagda.md
+./Converters/toPlainAgda    < Markdown/Lab3.agda > Agda/Lab3.agda
+./Converters/toPlainAgdaExo < Markdown/Lab3.agda > AgdaExo/Lab3.agda
+./Converters/toPlainAgdaSol < Markdown/Lab3.agda > AgdaSol/Lab3.agda
+
+./Converters/toLiterate     < Markdown/Lab4.agda > Literate/Lab4.lagda.md
+./Converters/toLiterateExo  < Markdown/Lab4.agda > LiterateExo/Lab4.lagda.md
+./Converters/toLiterateSol  < Markdown/Lab4.agda > LiterateSol/Lab4.lagda.md
+./Converters/toPlainAgda    < Markdown/Lab4.agda > Agda/Lab4.agda
+./Converters/toPlainAgdaExo < Markdown/Lab4.agda > AgdaExo/Lab4.agda
+./Converters/toPlainAgdaSol < Markdown/Lab4.agda > AgdaSol/Lab4.agda
+
+./Converters/toLiterate     < Markdown/Lab5.agda > Literate/Lab5.lagda.md
+./Converters/toLiterateExo  < Markdown/Lab5.agda > LiterateExo/Lab5.lagda.md
+./Converters/toLiterateSol  < Markdown/Lab5.agda > LiterateSol/Lab5.lagda.md
+./Converters/toPlainAgda    < Markdown/Lab5.agda > Agda/Lab5.agda
+./Converters/toPlainAgdaExo < Markdown/Lab5.agda > AgdaExo/Lab5.agda
+./Converters/toPlainAgdaSol < Markdown/Lab5.agda > AgdaSol/Lab5.agda
+
+./Converters/toLiterate     < Markdown/Lab6.agda > Literate/Lab6.lagda.md
+./Converters/toLiterateExo  < Markdown/Lab6.agda > LiterateExo/Lab6.lagda.md
+./Converters/toLiterateSol  < Markdown/Lab6.agda > LiterateSol/Lab6.lagda.md
+./Converters/toPlainAgda    < Markdown/Lab6.agda > Agda/Lab6.agda
+./Converters/toPlainAgdaExo < Markdown/Lab6.agda > AgdaExo/Lab6.agda
+./Converters/toPlainAgdaSol < Markdown/Lab6.agda > AgdaSol/Lab6.agda
+
+./Converters/toLiterate     < Markdown/Lab7.agda > Literate/Lab7.lagda.md
+./Converters/toLiterateExo  < Markdown/Lab7.agda > LiterateExo/Lab7.lagda.md
+./Converters/toLiterateSol  < Markdown/Lab7.agda > LiterateSol/Lab7.lagda.md
+./Converters/toPlainAgda    < Markdown/Lab7.agda > Agda/Lab7.agda
+./Converters/toPlainAgdaExo < Markdown/Lab7.agda > AgdaExo/Lab7.agda
+./Converters/toPlainAgdaSol < Markdown/Lab7.agda > AgdaSol/Lab7.agda
+
+./Converters/toLiterate     < Markdown/Lab8.agda > Literate/Lab8.lagda.md
+./Converters/toLiterateExo  < Markdown/Lab8.agda > LiterateExo/Lab8.lagda.md
+./Converters/toLiterateSol  < Markdown/Lab8.agda > LiterateSol/Lab8.lagda.md
+./Converters/toPlainAgda    < Markdown/Lab8.agda > Agda/Lab8.agda
+./Converters/toPlainAgdaExo < Markdown/Lab8.agda > AgdaExo/Lab8.agda
+./Converters/toPlainAgdaSol < Markdown/Lab8.agda > AgdaSol/Lab8.agda
+
+./Converters/toLiterate     < Markdown/Lab9.agda > Literate/Lab9.lagda.md
+./Converters/toLiterateExo  < Markdown/Lab9.agda > LiterateExo/Lab9.lagda.md
+./Converters/toLiterateSol  < Markdown/Lab9.agda > LiterateSol/Lab9.lagda.md
+./Converters/toPlainAgda    < Markdown/Lab9.agda > Agda/Lab9.agda
+./Converters/toPlainAgdaExo < Markdown/Lab9.agda > AgdaExo/Lab9.agda
+./Converters/toPlainAgdaSol < Markdown/Lab9.agda > AgdaSol/Lab9.agda

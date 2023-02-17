@@ -451,5 +451,4 @@ addR-commut n1 n2 = ?
 
 add-addR : (n1 n2 : Nat) -> Equal' (add n1 n2) (addR n1 n2)
 add-addR n1 n2 = ?
-``` 
-
+```

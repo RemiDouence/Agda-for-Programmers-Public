@@ -193,7 +193,7 @@ l11 : Equal (S Z) (S Z)
 l11 = ?
 ```
 
-- in case1: 
+- in `case1`: 
   - the *values* of the first and second arguments of `case1` can be deduced from the type of the third argument of `case1` 
   - `n1` and `n2` can be deduced from the type `Equal n1 n2` 
   - `n1` and `n2` can be implicit (noted in curly brackets) 
@@ -220,10 +220,10 @@ l22' = ?
 - functions and types cannot be overloaded
 
 - some types are empty (contains no value)
-- `Leq Z (S Z)` is empty 
-- `Leq (S Z) Z` is empty 
-- `Leq n1 n2` is empty when `n1` is different from `n2` 
-- `Leq n1 n2` contains a single value when `n1` is equal to `n2` 
+- `Equal Z (S Z)` is empty 
+- `Equal (S Z) Z` is empty 
+- `Equal n1 n2` is empty when `n1` is different from `n2` 
+- `Equal n1 n2` contains a single value when `n1` is equal to `n2` 
     - such a value is a list of `case1` (`n1` occurences) ending with a `case0` 
     - the function `Equal-refl` returns such a value for any natural 
 

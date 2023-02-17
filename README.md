@@ -19,7 +19,7 @@ Total time = 30h.
 
 **If you find this repository useful, please let me know at remi dot douence @ imt minus atlantique dot fr**
 
-The code is presented in three different versions:
+The code is presented in two different versions:
 
 1. In LiterateExo: (`.lagda.md`) literate markdown 
   https://agda.readthedocs.io/en/v2.6.3/tools/literate-programming.html#literate-markdown

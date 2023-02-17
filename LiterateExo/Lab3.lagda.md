@@ -10,7 +10,6 @@
 - anonymous function: `\ arg -> return` 
 - list: `[_]`
 - match on extra computation:
-```
     f : type
     f args = exp
 
@@ -23,7 +22,6 @@
     f args with exp
     ... | pat1 = exp
     ... | pat2 = exp
-```
 - partial function wannabe total: `Maybe`
 ```
 {-# OPTIONS --allow-unsolved-metas #-}

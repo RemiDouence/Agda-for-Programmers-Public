@@ -206,4 +206,3 @@ permutTrans p12 p23 = ?
 - `bubbleSort` cursively repeat on `initV`
 - use `Vec` to proove Agda your algorithm terminate
 - prove `bubbleSort` is correct
-```

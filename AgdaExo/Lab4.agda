@@ -130,6 +130,8 @@ xs !!V r = ?
 _ : v1 !!V (S Z) == 2
 _ = case0 
 
+--MD
+
 Mat : Set -> Nat -> Nat -> Set 
 Mat A n1 n2 = Vec (Vec A n1) n2
 

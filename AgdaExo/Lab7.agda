@@ -159,4 +159,3 @@ permutSym p12 = ?
 
 permutTrans : {A : Set} {l1 l2 l3 : [ A ]} -> Permut l1 l2 -> Permut l2 l3 -> Permut l1 l3
 permutTrans p12 p23 = ?
-

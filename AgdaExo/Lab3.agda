@@ -5,19 +5,6 @@
 
 -- Please do not distribute solutions but let people learn by doing the exercices.
 
---MD     f : type
---MD     f args = exp
---MD 
---MD     f : type 
---MD     f args with exp
---MD     f args | pat1 = exp
---MD     f args | pat2 = exp
---MD 
---MD     f : type 
---MD     f args with exp
---MD     ... | pat1 = exp
---MD     ... | pat2 = exp
-
 {-# OPTIONS --allow-unsolved-metas #-}
 
 module Lab3 where  

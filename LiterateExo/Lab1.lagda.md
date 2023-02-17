@@ -170,10 +170,10 @@ data Equal : Nat -> Nat -> Set where
 - `Equal` is a type constructor
 - once `Equal` is applied to two naturals you get a type 
 - for instance: 
-    - `Leq Z Z` is a type 
-    - `Leq Z (S Z)` is a type 
-    - `Leq (S Z) Z` is a type 
-    - ``Leq (S Z) (S Z)` is a type 
+    - `Equal Z Z` is a type 
+    - `Equal Z (S Z)` is a type 
+    - `Equal (S Z) Z` is a type 
+    - `Equal (S Z) (S Z)` is a type 
     - etc. 
 - hence the definition of `Equal` defines a family of types 
 - the two arguments of `Equal` are called indices

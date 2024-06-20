@@ -5,7 +5,7 @@
 
 -- Please do not distribute solutions but let people learn by doing the exercices.
 ```
-# LabZ
+# Lab8
 
 ## Key Points
 - what is a (semi) ring

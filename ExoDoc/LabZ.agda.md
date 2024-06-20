@@ -45,7 +45,7 @@ infixl 7 _*_
   rewrite *distrib+ n1 n2 n3
   rewrite +assoc n3  (n1 * n3) (n2 * n3)
   = case0
-
+ 
 *assoc : (n1 n2 n3 : Nat) -> (n1 * n2) * n3 == n1 * (n2 * n3)
 *assoc Z n2 n3 = case0
 *assoc (S n1) n2 n3
@@ -129,7 +129,7 @@ evalExp : Nat -> Exp -> Nat
 evalExp x e = ?
 
 _ : evalExp 2 (var :* var :+ k 1) == 5
-  = ?
+_ = ?
 
 ```
 ### Horner Normal Form
@@ -147,7 +147,7 @@ evalHNF : Nat -> HNF -> Nat
 evalHNF x h = ?
 
 _ : evalHNF 2 ((k 1 *x+ 0) *x+ 1) == 5
-  = ?
+_ = ?
 
 ```
 #### The addition of two Horners is an Horner
@@ -198,7 +198,7 @@ ExpToHNF : Exp -> HNF
 ExpToHNF e = ?
 
 _ : ExpToHNF (var :* var :+ k 1) == ((k 1 *x+ 0) *x+ 1)
-  = ?
+_ = ?
 
 ```
 ### conversion is correct

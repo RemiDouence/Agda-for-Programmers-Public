@@ -4,12 +4,14 @@ Here is the material for my course at IMT Atlantique about Agda for programmers.
 
 FIL software engineering apprenticeship program (http://www.imt-atlantique.fr/formation/ingenieur-par-apprentissage/ingenieurs-specialite-ingenierie-logicielle). This 3-year program leads to a Master's degree in software engineering at IMT Atlantique.
 
+FISE Login (second/third year at IMT Atlantique). Only 4 blocs of Agda.
+
 About 30 students each year.
 
 Half a day block = I program in front of the students for 75 minutes, then the students get my code and complete it for 150 minutes.
-There are 8 blocks. 
-I evaluate the last (8th) block.
-Total time = 30h.
+There are about 9 blocks. 
+I evaluate the last block.
+Total time = 32h30.
 
 - This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs License 
 - https://creativecommons.org/licenses/by-nc-nd/4.0/

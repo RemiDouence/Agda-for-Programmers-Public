@@ -19,19 +19,13 @@ Total time = 30h.
 
 **If you find this repository useful, please let me know at remi dot douence @ imt minus atlantique dot fr**
 
-The code is presented in three different versions:
+The code is presented in two different versions:
 
-1. In Agda MarkDown: (`.agda`) Agda with markdown as comments (each non Agda line is prefixed by
-  `--MD `) A line prefixed with `--EXO ` is a definition to be completed. 
-  Converters can extract either the exercice or its solution. 
-  This format `.agda` loads fine in my Agda installation. 
-  It can be used to develop literate markdown files.
-
-2. In Agda Literate: (`.lagda.md`) literate markdown 
+1. In ExoDoc: (`.lagda.md`) literate markdown 
   https://agda.readthedocs.io/en/v2.6.3/tools/literate-programming.html#literate-markdown
   I could not load this format in my Agda installation. Yet it renders
   nicely on github. It is the one you wish to browse online.
 
-3. in Agda: (`.agda`) plain Agda without markdown (the markdown as comments lines are erased)
+2. in ExoSrc: (`.agda`) plain Agda without markdown (the markdown as comments lines are erased)
   This format loads fine in my Agda installation. 
   It can be used to focus on code. 

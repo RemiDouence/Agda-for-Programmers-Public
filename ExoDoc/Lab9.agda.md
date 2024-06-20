@@ -49,6 +49,7 @@ Please have a look at the documentation for
   numerous teaching videos **in french** about depedent types, certified compilation and other interesting topics
 
 ### Book
+- Sandy Maguire, Certainty by Construction, https://leanpub.com/certainty-by-construction
 - Aaron Stump, Verified Functional Programming in Agda, https://www.morganclaypoolpublishers.com/catalog_Orig/product_info.php?products_id=908
 
 ### Research Articles

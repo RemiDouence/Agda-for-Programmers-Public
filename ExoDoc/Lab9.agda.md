@@ -79,7 +79,7 @@ Here are a few other proof assistants, although I have only had a look at Coq, a
 ```
 # Last but not least
 - I would like to thank:
-    - Julien Cohen, Herve Grall, Ronan-Alexandre Cherrueau, Nicolas Tabareau, Simon Boulier, Pierre-Marie Pedrot, Guillaume Munch-Maccagnoni, and members of the Gallinette team for their help with Coq and dependent types
+- Simon Boulier, Ronan-Alexandre Cherrueau, Julien Cohen, Herve Grall, Guillaume Munch-Maccagnoni, Pierre-Marie Pedrot, Josselin Poiret, Nicolas Tabareau, and members of the Gallinette team for their help with Coq and dependent types
     - the FIL A2 2021-24 students who have tested this material
     - Ulf Norell, Catarina Coquand and anybody involved in Agda development (your language rocks)
 

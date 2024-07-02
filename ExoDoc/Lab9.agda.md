@@ -1,7 +1,5 @@
 ```
--- This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs License
--- https://creativecommons.org/licenses/by-nc-nd/4.0/
--- Remi Douence
+
 
 -- Please do not distribute solutions but let people learn by doing the exercices.
 ```
@@ -15,8 +13,7 @@ module Lab9 where
 ```
 
 # To Be Continued
-
-## Agda syntax
+--MD ## Agda syntax
 - I have chosen simple identifiers to smooth the transition from Haskell to Agda
 - Agda heavily relies on unicode, in the standard library: 
     - `==` is named `≡`
@@ -67,7 +64,19 @@ Here are a few other proof assistants, although I have only had a look at Coq, a
 - https://www.idris-lang.org
 #### Lean
 - https://leanprover.github.io
+```
+--MD
+```
+### Formal Methods in Industry
+- [IOHK](https://iohk.io/en/), a blockchain company working on Cardano, uses Agda to formalize and verify their [transaction models](https://github.com/IntersectMBO/formal-ledger-specifications) or to verify [smart contract languages](https://github.com/omelkonian/formal-bitml)
+- [Serokell](https://serokell.io) apparently uses Agda
+- Amazon Web Services uses Lean 4 to formalize their [authorization policy language](https://www.amazon.science/publications/cedar-a-new-language-for-expressive-fast-safe-and-analyzable-authorization)
+- [Nomadic Labs](https://www.nomadic-labs.com) formalizes the Tezos block chain in Coq, and also [Formal Land](https://formal.land), who made the [coq-of-rust](https://github.com/formal-land/coq-of-rust) tool to be able to check Rust with Coq
+- in aerospace, there are a lot of companies using formal methods, such as Airbus, NASA and others
+- more generally, there's a [list](https://github.com/ligurio/practical-fm) of companies that use formal methods
+```
 
+```
 # Last but not least
 - I would like to thank:
     - Julien Cohen, Herve Grall, Ronan-Alexandre Cherrueau, Nicolas Tabareau, Simon Boulier, Pierre-Marie Pedrot, Guillaume Munch-Maccagnoni, and members of the Gallinette team for their help with Coq and dependent types

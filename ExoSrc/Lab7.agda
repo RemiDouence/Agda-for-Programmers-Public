@@ -26,6 +26,10 @@ data _<=_ : Nat -> Nat -> Set where
   case0 : {n2 : Nat} -> Z <= n2 
   case1 : {n1 n2 : Nat} -> n1 <= n2 -> (S n1) <= (S n2)
 
+<=refl : {x : Nat} -> x <= x
+<=refl {Z} = case0
+<=refl {S x} = case1 <=refl
+
 <=trans : {n1 n2 n3 : Nat} -> n1 <= n2 -> n2 <= n3 -> n1 <= n3 
 <=trans case0 p23 = case0
 <=trans (case1 p12) (case1 p23) = case1 (<=trans p12 p23) 
@@ -159,3 +163,99 @@ permutSym p12 = ?
 
 permutTrans : {A : Set} {l1 l2 l3 : [ A ]} -> Permut l1 l2 -> Permut l2 l3 -> Permut l1 l3
 permutTrans p12 p23 = ?
+
+
+-- josselin's version
+
+data Where {A : Set} : [ A ] -> Set where
+  here : {xs : [ A ]} -> Where xs
+  there : {x : A} {xs : [ A ]} -> Where xs -> Where (x :: xs)
+
+_ : Where (1 :: 3 :: [])
+_ = here 
+
+_ : Where (1 :: 3 :: [])
+_ = there (there here) 
+
+
+mkWhere : (x : Nat) (xs : [ Nat ]) -> Where xs
+mkWhere x ys = ? 
+
+_ : mkWhere 1 (1 :: 3 :: []) == here
+_ = case0
+
+_ : mkWhere 2 (1 :: 3 :: []) == there here
+_ = case0
+
+
+insert'At : {A : Set} -> A -> (xs : [ A ]) -> Where xs -> [ A ]
+insert'At x ys loc = ?
+
+_ : insert'At 0 (1 :: 3 :: []) here == 0 :: 1 :: 3 :: []
+_ = case0
+
+_ : insert'At 0 (1 :: 3 :: []) (there here) == 1 :: 0 :: 3 :: []
+_ = case0
+
+
+insert' : Nat -> [ Nat ] -> [ Nat ]
+insert' y l = insert'At y l (mkWhere y l)
+
+_ : insert' 1 (1 :: 3 :: []) == 1 :: 1 :: 3 :: []
+_ = case0
+
+_ : insert' 2 (1 :: 3 :: []) == 1 :: 2 :: 3 :: []
+_ = case0
+
+
+data _Smaller_ (x : Nat) : [ Nat ] -> Set where
+  [] : x Smaller []
+  _::_ : {y : Nat} {ys : [ Nat ]} -> x <= y -> x Smaller ys -> x Smaller (y :: ys)
+
+_ : 1 Smaller (1 :: 3 :: [])
+_ = (case1 case0) :: (case1 case0) :: []
+
+_ : 2 Smaller (3 :: [])
+_ = case1 (case1 case0) :: []
+
+
+data Sorted : [ Nat ] -> Set where
+  [] : Sorted []
+  _::_ : {x : Nat} {xs : [ Nat ]} -> x Smaller xs -> Sorted xs -> Sorted (x :: xs)
+
+_ : Sorted (1 :: 3 :: [])
+_ = (case1 case0 :: []) :: [] :: []
+
+_ : Sorted (1 :: 2 :: 3 :: [])
+_ = (case1 case0 :: case1 case0 :: []) :: (case1 (case1 case0) :: []) :: [] :: []
+
+
+insert'At<= : {x y : Nat} {ys : [ Nat ]} {loc : Where ys}
+  -> x <= y
+  -> x Smaller ys
+  -> x Smaller (insert'At y ys loc)
+insert'At<= p isSmaller = ?
+
+
+<=Smaller : {x y : Nat} { ys : [ Nat ]} -> x <= y -> y Smaller ys -> x Smaller ys
+<=Smaller p isSmaller = ?
+
+insert'Sorted : (x : Nat) (ys : [ Nat ]) -> Sorted ys -> Sorted (insert' x ys)
+insert'Sorted x ys ysSorted = ?
+
+data Permut' {A : Set} : [ A ] -> [ A ] -> Set where
+  case0 : Permut' [] []
+  case1 : {x : A} {xs ys : [ A ]}
+    -> Permut' xs ys
+    -> (loc : Where ys)
+    -> Permut' (x :: xs) (insert'At x ys loc)
+
+record SortedOf (xs : [ Nat ]) : Set where
+  constructor sortedOf
+  field
+    sortedList : [ Nat ]
+    isSorted : Sorted sortedList
+    isPermut' : Permut' xs sortedList
+
+insert'SortProof : (xs : [ Nat ]) -> SortedOf xs
+insert'SortProof xs = ?

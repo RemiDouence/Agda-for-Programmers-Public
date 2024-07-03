@@ -19,7 +19,7 @@ module Lab9 where
     - `==` is named `≡`
     - `Nat` is named `ℕ`
     - `<=` is named `≤`
-    - `neg` is nammed `¬`
+    - `neg` is named `¬`
     - etc.
 
 ## Agda offers more concepts

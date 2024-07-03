@@ -261,3 +261,10 @@ record SortedOf (xs : [ Nat ]) : Set where
 insert'SortProof : (xs : [ Nat ]) -> SortedOf xs
 insert'SortProof xs = ?
 
+
+
+-- define `bubble` and `bubbleSort`
+-- `bubble` post condition: the bigest natural is last
+-- `bubbleSort` cursively repeat on `initV`
+-- use `Vec` to proove Agda your algorithm terminate
+-- prove `bubbleSort` is correct

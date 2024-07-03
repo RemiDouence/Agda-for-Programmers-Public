@@ -322,8 +322,11 @@ insert'SortProof xs = ?
 
 ```
 ## Bubble Sort  
-- define `bubble` and `bubbleSort`
-- `bubble` post condition: the bigest natural is last
-- `bubbleSort` cursively repeat on `initV`
-- use `Vec` to proove Agda your algorithm terminate
-- prove `bubbleSort` is correct
+```
+
+-- define `bubble` and `bubbleSort`
+-- `bubble` post condition: the bigest natural is last
+-- `bubbleSort` cursively repeat on `initV`
+-- use `Vec` to proove Agda your algorithm terminate
+-- prove `bubbleSort` is correct
+```

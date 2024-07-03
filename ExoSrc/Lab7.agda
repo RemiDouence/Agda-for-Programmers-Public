@@ -165,6 +165,7 @@ permutTrans : {A : Set} {l1 l2 l3 : [ A ]} -> Permut l1 l2 -> Permut l2 l3 -> Pe
 permutTrans p12 p23 = ?
 
 
+
 -- josselin's version
 
 data Where {A : Set} : [ A ] -> Set where
@@ -259,3 +260,4 @@ record SortedOf (xs : [ Nat ]) : Set where
 
 insert'SortProof : (xs : [ Nat ]) -> SortedOf xs
 insert'SortProof xs = ?
+

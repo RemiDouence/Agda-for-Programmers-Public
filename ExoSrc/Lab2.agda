@@ -205,7 +205,7 @@ cong f pxy = ?
 
 -- (rewrite proof) + is commutative 
 +commut' : (n1 n2 : Nat) -> n1 + n2 == n2 + n1
-+commut n1 n2 = ?
++commut' n1 n2 = ?
 
 
 -- properties of +I (proofs with rewrite)

@@ -166,7 +166,7 @@ data Div : Nat -> Nat -> Set where
   case0 : {n m : Nat} -> (r q : Nat) -> n == (S m) * q + r -> Div n (S m)
 
 sucDiv : {n m : Nat} -> Div n m -> Div (S n) m
-sucDiv n m dnm = ?
+sucDiv {n} {m} dnm = ?
 
 div4' : (n m : Nat) -> Div n (S m)
 div4' n m = ?

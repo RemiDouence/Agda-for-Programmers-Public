@@ -143,7 +143,7 @@ curryUncurry : {A B C : Set} -> ((A And B) -> C) <=> (A -> B -> C)
 curryUncurry = ? 
 
 <=''S : {n1 n2 : Nat} -> n1 <='' n2 -> (S n1) <='' (S n2)
-<='' p12 = ?
+<=''S p12 = ?
 
 <=<='' : {n1 n2 : Nat} -> n1 <= n2 -> n1 <='' n2
 <=<='' p12 = ?

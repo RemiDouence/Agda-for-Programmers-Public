@@ -145,7 +145,7 @@ _ = case0
 reverseV'' : {A : Set}{n : Nat} -> Vec A n -> Vec A n
 reverseV'' xs = ?
 
-_ : reverseV v1 == 3 :: 2 :: 1 :: [] 
+_ : reverseV'' v1 == 3 :: 2 :: 1 :: [] 
 _ = case0 
 ```
 - we can also define an iterative `reverseV'''` with the iterative addition `+I`
@@ -261,9 +261,7 @@ _ = case0
 - `S Z` is overloaded, they are an infinite number of different values noted `S Z` (one value is a `Nat`, one value is a `Rank (S Z)`, one value is a `Rank (S (S Z))`, etc.) 
 - but `0` is a `Nat`, `1` is a `Nat`, `2` is a `Nat`, etc.
 - so we cannot write `v1 !!V 1`
-```
---MD
-```
+
 ### Matrix
 - a rectangular matrix is a vector of vectors 
 ```

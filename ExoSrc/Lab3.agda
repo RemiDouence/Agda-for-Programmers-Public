@@ -198,3 +198,19 @@ length-reverseIt l = ?
 
 length-filter : {A : Set} -> (f : A -> Bool) -> (l : [ A ]) -> (length (filter f l)) <= (length l)
 length-filter f l = ?
+
+-- define insert 
+insert : Nat -> [ Nat ] -> [ Nat ]
+insert e xs = ?
+
+-- define sort
+sort : [ Nat ] -> [ Nat ]
+sort xs = ?
+
+-- prove insert increments length
+length-insert : (e : Nat) -> (xs : [ Nat ]) -> length (insert e xs) == S (length xs)
+length-insert e xs = ?
+
+-- prove sort preserves length
+length-sort : (xs : [ Nat ]) -> length xs == length (sort xs)
+length-sort xs = ?

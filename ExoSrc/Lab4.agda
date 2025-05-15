@@ -63,7 +63,7 @@ _ = case0
 reverseV'' : {A : Set}{n : Nat} -> Vec A n -> Vec A n
 reverseV'' xs = ?
 
-_ : reverseV v1 == 3 :: 2 :: 1 :: [] 
+_ : reverseV'' v1 == 3 :: 2 :: 1 :: [] 
 _ = case0 
 
 reverseV''' : {A : Set}{n1 n2 : Nat} -> Vec A n1 -> Vec A n2 -> Vec A (n1 +I n2)
@@ -129,8 +129,6 @@ xs !!V r = ?
 
 _ : v1 !!V (S Z) == 2
 _ = case0 
-
---MD
 
 Mat : Set -> Nat -> Nat -> Set 
 Mat A n1 n2 = Vec (Vec A n1) n2
